@@ -12,11 +12,19 @@ Create a Virtual Environment (Optional)
 ```bash
 python3 -m venv <venv-name>
 ```
+or
+```bash
+make virtualenv
+```
 
 Install Requirements
 
 ```bash
 pip3 install -r requirements.txt
+```
+or
+```bash
+make local-init
 ```
 
 ## Usage
@@ -28,11 +36,16 @@ python unbabel_cli.py
 
 ## Example
 ```
-python unbabel_cli.py --input_file ../data/inputs/input.json  --window_size 10
+python unbabel_cli.py --input_file ../data/inputs/input.json  --window_size 10`
 ```
 
 ## Run tests
 ```
 cd cli
 python -m pytest tests
+```
+
+or
+```
+make local-test
 ```
