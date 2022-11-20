@@ -1,10 +1,38 @@
 # Unbabel cli
-simple command line application that parses a stream of events and produces an aggregated output. In this case, we're instered in calculating, for every minute, a moving average of the translation delivery time for the last X minutes.
+Hi 👋, I'm João and welcome to my solution! 
 
-### Run
-`cd cli`
-`python unbabel_cli.py --input_file ../data/inputs/input.json  --window_size 10`
+This is a simple command line application that parses a stream of events and produces an aggregated output. In this case, we're instered in calculating, for every minute, a moving average of the translation delivery time for the last X minutes.
 
-### Run tests
-`cd cli`
-`python -m pytest tests`
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install unbabel-cli.
+
+Create a Virtual Environment (Optional)
+
+```bash
+python3 -m venv <venv-name>
+```
+
+Install Requirements
+
+```bash
+pip3 install -r requirements.txt
+```
+
+## Usage
+
+```python
+cd cli
+python unbabel_cli.py
+```
+
+## Example
+```
+python unbabel_cli.py --input_file ../data/inputs/input.json  --window_size 10`
+```
+
+## Run tests
+```
+cd cli
+python -m pytest tests
+```
