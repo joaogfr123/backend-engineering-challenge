@@ -1,7 +1,7 @@
 # Unbabel cli
 Hi 👋, I'm João and welcome to my solution! 
 
-This is a simple command line application that parses a stream of events and produces an aggregated output. In this case, we're instered in calculating, for every minute, a moving average of the translation delivery time for the last X minutes.
+This is a simple command line application that parses a stream of events and produces an aggregated output. In this case, we're calculating, for every minute, a moving average of the translation delivery time for the last X minutes.
 
 ## Installation
 

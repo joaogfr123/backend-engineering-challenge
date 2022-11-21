@@ -1,6 +1,7 @@
 import pandas as pd
 
-class GenerateOutputService:
+class OutputService:
+    """Class responsible to generate outputs to different sources, files, APIs, dashboards"""
 
     @staticmethod
     def create_json_file(df: pd.DataFrame, output_file: str ='../data/outputs/output.json', orient: str ='records'):

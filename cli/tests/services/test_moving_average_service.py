@@ -7,7 +7,7 @@ def test_simple_moving_average():
     """Should return a dataframe with a new column ['sma'] with the simple moving
     average for the events"""
 
-    df_path = os.path.join(os.path.dirname(__file__), '../data/pre_processed_df.csv')
+    df_path = os.path.join(os.path.dirname(__file__), '../../../data/pre_processed_df.csv')
     df = pd.read_csv(df_path)
 
     result = MovingAverageService.simple_moving_average(df, 10)
