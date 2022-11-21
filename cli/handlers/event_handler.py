@@ -5,6 +5,7 @@ from schemas.translation_event_schema import TranslationEventSchema
 class EventHandler:
     """Handles events from all formats"""
 
+    @staticmethod
     def convert_json_to_df(filename: str) -> pd.DataFrame:
         """Converts json file to a pandas Dataframe"""
 
@@ -18,6 +19,7 @@ class EventHandler:
 
         return df
 
+    @staticmethod
     def convert_file_to_df(filename: str) -> Callable:
         """Receives the filename and redirected to the right function to parse the file """
 

@@ -3,6 +3,7 @@ import pandas as pd
 class MovingAverageService:
     """Class to create movie clips"""
     
+    @staticmethod
     def calc_index_timestamps(current_index: int, window_size: int):
         """Calculates the start and end index based on the window size"""
 
@@ -12,7 +13,7 @@ class MovingAverageService:
 
         return current_index, current_index-window_size
 
-
+    @staticmethod
     def simple_moving_average(df: pd.DataFrame, window: int) -> pd.DataFrame:
         """Calculates a simple moving average for events"""
         result = []
